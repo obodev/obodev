@@ -3,11 +3,17 @@
   --gray-2: #32353a;
   --gray-3: #25282c;
   --gray-4: #151618;
-  --gray-5: #151618;
-  --gray-6: #111111;
+  --gray-5: #1C1C1E;
+  --gray-6: #8E8E8E;
   --white-1: #eeeeee;
   --white-2: #a9abb3;
 }
+
+/*1C1C1E*/
+/*8E8E8E*/
+/*FF3B30*/
+
+
 #category-modal-bg {
   position: fixed;
   top: 0;

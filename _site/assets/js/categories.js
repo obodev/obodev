@@ -1,4 +1,4 @@
-const categories = { Swift: [{ url: `/posts/a-bit-of-loops/`, date: `08 Aug 2022`, title: `Немного про циклы`},],SPL: [{ url: `/posts/a-bit-of-loops/`, date: `08 Aug 2022`, title: `Немного про циклы`},], }
+const categories = { Swift: [{ url: `/posts/a-bit-of-loops/`, date: `08 Aug 2022`, title: `Немного про циклы`},],SPL: [{ url: `/posts/a-bit-of-loops/`, date: `08 Aug 2022`, title: `Немного про циклы`},],Циклы: [{ url: `/posts/a-bit-of-loops/`, date: `08 Aug 2022`, title: `Немного про циклы`},], }
 
 console.log(categories)
 
