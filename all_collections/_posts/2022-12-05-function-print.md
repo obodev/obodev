@@ -108,7 +108,7 @@ some string two
 // some string two
 ```
 
-Пример с оператором "\n"
+Пример с оператором "\n":
 
 ```swift
 print("some string one\nsome string two")
@@ -161,6 +161,6 @@ print(array, type(of: array))
 - [Кортежи](https://robot.obo.dev/read/posts/tuple/)
 - [Функции](https://robot.obo.dev/read/posts/function/)
 
-Ссылки на официальную документацию 
+Ссылки на официальную документацию:
 
 - [Apple Developer Documentation - Print()](https://developer.apple.com/documentation/swift/print(_:separator:terminator:))
