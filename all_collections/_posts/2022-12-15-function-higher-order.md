@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Функции высшего порядка (Function Higher Order)
-date: 2022-12-15
+date: 2022-12-11
 categories: ["Swift", "SPL", "Function"]
 ---
 
