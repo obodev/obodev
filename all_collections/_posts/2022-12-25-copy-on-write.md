@@ -21,7 +21,7 @@ categories: ["Swift", "SPL"]
 
 Давайте рассмотрим, как ведет себя тип значения, в данном случае структура, когда вы присваиваете его другой новой переменной.
 
-```
+```swift
 func address(o: UnsafeRawPointer) -> Int {
     return Int(bitPattern: o)
 }
@@ -53,7 +53,7 @@ print("\(a1.name), \(b1.name)")
 
 Если бы `Car` был классом, результат был бы совсем другим, давайте посмотрим:
 
-```
+```swift
 func addressHeap<T: AnyObject>(o: T) -> Int {
     return unsafeBitCast(o, to: Int.self)
 }
@@ -127,7 +127,7 @@ print("\(a2.name), \(b2.name)")
 
 С небольшими данными (String, Int) не возникает проблем, так как размер занимаемой памяти не большой. Но в случае с массивами, которые могут достигать нескольких мегабайт, копирование данных может вызывать определённые проблемы.
 
-```
+```swift
 func address(of object: UnsafeRawPointer) -> String {
     return String(format: "%p", Int(bitPattern: object))
 }
@@ -176,7 +176,7 @@ print(address(of: arrayThree))
 
 Допустим есть массив данных и требуется создать второй массив из части первого массива:
 
-```
+```swift
 let fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 let lessTen = fibonacci[..<7]
 print(lessTen)
@@ -189,7 +189,7 @@ print(lessTen)
 
 Или из строки необходимо создать подстроку:
 
-```
+```swift
 let griting = "Hello! Nice to meet you!"
 let endOfSentence = griting.firstIndex(of: "!")
 let firstSentence = griting[...(endOfSentence!)]
@@ -213,7 +213,7 @@ print(firstSentence)
 
 Задача: реализовать структуру, которая не будет обладать свойствами класса. Будет копироваться, но не сразу, а при изменении.
 
-```
+```swift
 struct SomeStruct {
     var value: String
 }
@@ -225,7 +225,7 @@ struct SomeStruct {
 
 Структура `Container` будет реализовывать сам механизм Copy-on-Write. В инициализатор структуры `Container` будем передавать нашу структуру, для которой будем использовать Copy-on-Write - `SomeStruct`.
 
-```
+```swift
 // Manual CoW
 final class Reference<T> {
     var value: T
